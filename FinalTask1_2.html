@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Task</title>
+    <script src="FinalTask.js"></script>
+</head>
+
+<body>
+    <h1>Final Laboratory Task 1</h1>
+    <table>
+        <tr>
+        <td>Enter First Number:</td>
+            <td><input type="text" id="num1"></td>
+        </tr>
+
+        <tr>
+            <td>Enter Second Number:</td>
+            <td><input type="text" id="num2"></td>
+
+        </tr>
+
+        <tr>
+            <td>Result:</td>
+            <td><input type="text" id="result" readonly></td>
+        </tr>
+    </table>
+
+    <button onclick="addNumbers()">Add</button>
+    <button onclick="subNumbers()">Subtract</button>
+    <button onclick="multiplyNumbers()">Multiply</button>
+    <button onclick="divideNumbers()">Divide</button>
+    <button onclick="clearValues()">Clear</button>
+    <button onclick="About()">About</button>
+
+    <h1>Final Laboratory Task 2</h1>
+    <form>
+        <fieldset style="width:300px">
+            <legend></legend>
+            <label for="quantity">Basketball Products</label>
+            <input type="text" id="quantity" value="0" size="10">
+            <button type="button" onclick="increment()">+</button>
+            <button type="button" onclick="decrement()">-</button>
+<br>
+            <label for="shipping">Shipping and Handling Fee:</label>
+            <input type="text" id="shipping" value="4.99" size="10"><br>
+            <button type="button" onclick="calculate()">Calculate</button>
+        </fieldset>
+        <table>
+            <tr>
+                <th><label>ORDER SUMMARY</label></th>
+            </tr>
+
+            <tr>
+                <td><label>Number of items:</label></td>
+                <td><span id="numItems">0</span></td>
+            </tr>
+
+            <tr>
+                <td><label>Shipping & Handling:</label></td>
+                <td><span id="shippingFee">0</span></td>
+            </tr>
+
+            <tr>
+                <td><h2></h2></td>
+            </tr>
+
+            <tr>
+
+                <td><label>Total Before Tax:</label></td>
+                <td><span id="totalBeforeTax">$0.00</span></td>
+            </tr>
+                <td><label>Estimated 10% Tax:</label></td>
+                <td><span id="tax">$0.00</span></td>
+            </tr>
+
+            <tr>
+                <td><label>Total Order:</label></td>
+                <td><p id="totalOrder">$0.00</p></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
