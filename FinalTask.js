@@ -33,7 +33,7 @@ function clearValues() {
 }
 
 function About() {
-    var fullName = "Jayson Darryne Davic";
+    var fullName = "Jayson Darryne David";
     alert("Work of " + fullName);
 }
 
